@@ -9,6 +9,11 @@
 </head>
 <body>
 <script>
+   /**
+    * Sending IP address with source ref link
+    * screen.width + "x" + screen.height
+    * **/
+
    fetch('https://api.ipify.org/?format=json')
       .then(res => res.json())
       .then(data => console.log(data.ip))
